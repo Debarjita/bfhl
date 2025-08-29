@@ -57,18 +57,18 @@ function makeRequest(testCase) {
 }
 
 async function runTests() {
-    console.log('🚀 Running API Tests...\n');
+    console.log(' Running API Tests...\n');
     
     for (const testCase of testCases) {
         try {
             const result = await makeRequest(testCase);
-            console.log(`✅ ${result.testCase}`);
+            console.log(` ${result.testCase}`);
             console.log(`Status Code: ${result.statusCode}`);
             console.log('Response:');
             console.log(JSON.stringify(result.response, null, 2));
             console.log('---\n');
         } catch (error) {
-            console.log(`❌ ${testCase.name} failed:`, error.message);
+            console.log(` ${testCase.name} failed:`, error.message);
         }
     }
 }
