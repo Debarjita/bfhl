@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-// Your personal details (replace with your actual details)
+// User personal details 
 const USER_INFO = {
     user_id: "debarjita_bhattacharjee", 
     email: "debar.bhatt10@gmail.com",      
